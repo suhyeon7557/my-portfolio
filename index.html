@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10162b" />
+    <title>SUHYUN — AI Visual Artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="SUHYUN 홈">SU<span>:</span>HYUN</a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false"><i></i><i></i></button>
+      <nav class="nav" aria-label="주 메뉴">
+        <a href="#about">PROFILE</a>
+        <a href="#projects">PROJECTS</a>
+        <a class="nav-contact" href="#contact" data-open-contact>LET'S TALK <b>↗</b></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-video-wrap">
+          <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+            <source src="assets/IEBC_수현최종.mp4" type="video/mp4" />
+          </video>
+          <div class="video-overlay"></div>
+          <p class="video-label"><span></span> NOW PLAYING / IEBC</p>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">VIDEO · STORYTELLING · CREATIVE</p>
+          <h1 id="hero-title">I MAKE<br />STORIES THAT<br /><em>MOVE PEOPLE.</em></h1>
+          <p class="hero-description">사람의 마음에 오래 남는 이야기를 만듭니다.</p>
+          <a class="round-link" href="#projects" aria-label="프로젝트 보러가기">↓<span>VIEW<br />WORK</span></a>
+        </div>
+        <p class="hero-index">01<br /><span>/ 03</span></p>
+      </section>
+
+      <section class="manifesto" id="about" aria-labelledby="about-title">
+        <div class="section-label">( ABOUT ME )</div>
+        <div class="manifesto-grid">
+          <div>
+            <p class="intro">I turn ideas into<br /><mark>stories that move.</mark></p>
+            <p class="body-copy">익숙한 방식에 머무르기보다 새로운 기술과 도구를 탐색하고, 이를 나만의 방식으로 작업에 녹여냅니다. 디자인과 영상, 다양한 실험을 넘나들며 아이디어를 시각적인 경험과 오래 기억되는 이야기로 만들어갑니다.</p>
+          </div>
+          <div class="profile-media">
+            <video class="profile-video" autoplay muted loop playsinline preload="metadata">
+              <source src="assets/magic-profile.mp4" type="video/mp4" />
+            </video>
+            <dl class="profile-info">
+              <div><dt>NAME</dt><dd>LEE SUHYEON</dd></div>
+              <div><dt>FOCUS</dt><dd>VIDEO<br />STORYTELLING<br />CREATIVE</dd></div>
+              <div><dt>EXPERIENCE</dt><dd>2.6 YEARS IN<br />WEB DESIGN</dd></div>
+              <div><dt>BASED IN</dt><dd>YONGIN, KR</dd></div>
+              <div><dt>CONTACT</dt><dd><a href="mailto:suhyn7557@gmail.com">SUHYN7557@<br />GMAIL.COM</a><br /><a href="tel:+821098637557">010 9863 7557</a></dd></div>
+            </dl>
+          </div>
+        </div>
+        <div class="keywords" aria-label="작업 키워드">
+          <article><b>01</b><h2>IDEA</h2><p>스쳐 가는 상상을<br />선명한 장면으로.</p></article>
+          <article><b>02</b><h2>EXPLORE</h2><p>낯선 도구를 탐색하고<br />새로운 가능성을 발견합니다.</p></article>
+          <article><b>03</b><h2>BREAK</h2><p>익숙한 방식에서 벗어나<br />다른 시선을 더합니다.</p></article>
+          <article><b>04</b><h2>CREATE</h2><p>발견한 가능성을 엮어<br />새로운 경험을 만듭니다.</p></article>
+        </div>
+      </section>
+
+      <section class="projects" id="projects" aria-labelledby="projects-title">
+        <div class="projects-head">
+          <div class="section-label">( SELECTED PROJECTS )</div>
+          <h2 id="projects-title">MOTION<br /><em>STUDIES</em></h2>
+          <a href="projects.html" class="text-link">ALL PROJECTS <span>↗</span></a>
+          <div class="rail-controls" aria-label="프로젝트 슬라이드 제어">
+            <button class="rail-control" type="button" data-direction="previous" aria-label="이전 프로젝트">←</button>
+            <button class="rail-control" type="button" data-direction="next" aria-label="다음 프로젝트">→</button>
+          </div>
+        </div>
+        <div class="project-tabs" role="tablist" aria-label="프로젝트 분류">
+          <button class="is-active" type="button" role="tab" data-filter="all">ALL</button><button type="button" role="tab" data-filter="ai">AI VISUALS</button><button type="button" role="tab" data-filter="motion">MOTION &amp; EDIT</button><button type="button" role="tab" data-filter="3d">3D WORLDS</button><button type="button" role="tab" data-filter="hybrid">HYBRID &amp; LIVE</button>
+        </div>
+        <div class="project-rail" aria-label="프로젝트 슬라이드">
+          <a class="project-card lime-card" data-category="ai" href="projects.html#nike"><video autoplay muted loop playsinline preload="metadata"><source src="assets/NIKE FILM (개인작품).mp4" type="video/mp4" /></video><div class="card-shade"></div><p>AI VISUALS / 01</p><h3>NIKE<br />— BREATHE. GO BEYOND.</h3><span class="arrow">↗</span></a>
+          <a class="project-card navy-card" data-category="ai" href="projects.html#byredo"><video autoplay muted loop playsinline preload="metadata"><source src="assets/바이레도 발다프리크 AI 최종.mp4" type="video/mp4" /></video><div class="card-shade"></div><p>AI VISUALS / 02</p><h3>BYREDO<br />— BAL D'AFRIQUE</h3><span class="arrow">↗</span></a>
+          <a class="project-card human-card" data-category="ai" href="projects.html#human"><video autoplay muted loop playsinline preload="metadata"><source src="assets/Human_최종.mp4" type="video/mp4" /></video><div class="card-shade"></div><p>AI VISUALS / 03</p><h3>HUMAN AI<br />— ERROR OR SELF?</h3><span class="arrow">↗</span></a>
+          <a class="project-card" data-category="ai" href="projects.html#bacchus"><video autoplay muted loop playsinline preload="metadata"><source src="assets/박카스 제로 광고_0721(최종).mp4" type="video/mp4" /></video><div class="card-shade"></div><p>AI VISUALS / 04</p><h3>BACCHUS ZERO<br />— KEEP IT LIGHT.</h3><span class="arrow">↗</span></a>
+          <a class="project-card" data-category="motion" href="projects.html#korail"><video autoplay muted loop playsinline preload="metadata"><source src="assets/코레일톡 리뉴얼 홍보영상(sound).mp4" type="video/mp4" /></video><div class="card-shade"></div><p>MOTION &amp; EDIT / 01</p><h3>KORAIL TALK<br />— RENEWAL</h3><span class="arrow">↗</span></a>
+          <a class="project-card" data-category="motion" href="projects.html#fry"><video autoplay muted loop playsinline preload="metadata"><source src="assets/후라이의 꿈_이수현.mp4" type="video/mp4" /></video><div class="card-shade"></div><p>MOTION &amp; EDIT / 02</p><h3>FRY'S DREAM<br />— AKMU</h3><span class="arrow">↗</span></a>
+          <a class="project-card pink-card namdo-card" data-category="motion" href="projects.html#namdo"><video autoplay muted loop playsinline preload="metadata"><source src="assets/남도홍보영상.mp4" type="video/mp4" /></video><div class="card-shade"></div><p>MOTION &amp; EDIT / 03</p><h3>NAMDO<br />— RHYTHM OF LAND</h3><span class="arrow">↗</span></a>
+          <a class="project-card" data-category="3d" href="projects.html#gas"><video autoplay muted loop playsinline preload="metadata"><source src="assets/gas station모션 .mp4" type="video/mp4" /></video><div class="card-shade"></div><p>3D WORLDS / 01</p><h3>GAS STATION<br />— AFTER DARK</h3><span class="arrow">↗</span></a>
+          <a class="project-card" data-category="3d" href="projects.html#mars"><video autoplay muted loop playsinline preload="metadata"><source src="assets/Mars factory_end.mp4" type="video/mp4" /></video><div class="card-shade"></div><p>3D WORLDS / 02</p><h3>MARS FACTORY<br />— RED SHIFT</h3><span class="arrow">↗</span></a>
+          <a class="project-card" data-category="3d" href="projects.html#stranger"><video autoplay muted loop playsinline preload="metadata"><source src="assets/Stanger things_최종(이수현).mp4" type="video/mp4" /></video><div class="card-shade"></div><p>3D WORLDS / 03</p><h3>STRANGER THINGS<br />— HAWKINS LAB</h3><span class="arrow">↗</span></a>
+          <a class="project-card" data-category="hybrid" href="projects.html#black"><video autoplay muted loop playsinline preload="metadata"><source src="assets/balck or white_이수현.mp4" type="video/mp4" /></video><div class="card-shade"></div><p>HYBRID &amp; LIVE / 01</p><h3>BLACK OR WHITE<br />— AUDIO VISUAL</h3><span class="arrow">↗</span></a>
+          <a class="project-card" data-category="hybrid" href="projects.html#folkvillage"><video autoplay muted loop playsinline preload="metadata"><source src="assets/비하인드팀 민속촌.mp4" type="video/mp4" /></video><div class="card-shade"></div><p>HYBRID &amp; LIVE / 02</p><h3>FOLK VILLAGE<br />— AFTER DARK</h3><span class="arrow">↗</span></a>
+          <a class="project-card" data-category="hybrid" href="projects.html#homeshopping"><video autoplay muted loop playsinline preload="metadata"><source src="assets/발을씻자 홈쇼핑 최종.mp4" type="video/mp4" /></video><div class="card-shade"></div><p>HYBRID &amp; LIVE / 03</p><h3>FOOT SHAMPOO<br />— HOME SHOPPING</h3><span class="arrow">↗</span></a>
+        </div>
+        <p class="scroll-hint">DRAG / SCROLL TO EXPLORE <span>→</span></p>
+      </section>
+    </main>
+    <footer><a class="brand" href="#top">SU<span>:</span>HYUN</a><p>VIDEO · STORYTELLING · CREATIVE · 2026</p><a href="mailto:suhyn7557@gmail.com">SUHYN7557@GMAIL.COM ↗</a></footer>
+    <div class="contact-modal" id="contact" aria-hidden="true">
+      <button class="modal-backdrop" type="button" aria-label="문의창 닫기" data-close-contact></button>
+      <section class="contact-dialog" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+        <button class="modal-close" type="button" aria-label="문의창 닫기" data-close-contact>×</button>
+        <p class="eyebrow">( LET'S TALK )</p>
+        <h2 id="contact-title">LET'S MAKE<br /><em>SOMETHING MOVE.</em></h2>
+        <div class="contact-grid">
+          <div class="direct-contact"><p>CONTACT DIRECTLY</p><a href="mailto:suhyn7557@gmail.com">SUHYN7557@GMAIL.COM</a><a href="tel:+821098637557">010 9863 7557</a><span>YONGIN, KR</span></div>
+          <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden-field"><label>DON'T FILL THIS OUT <input name="bot-field" /></label></p>
+            <label>NAME<input required name="name" autocomplete="name" /></label>
+            <label>EMAIL<input required type="email" name="email" autocomplete="email" /></label>
+            <label>MESSAGE<textarea required name="message" rows="4" placeholder="Tell me about your project."></textarea></label>
+            <button type="submit">SEND MESSAGE <span>↗</span></button>
+            <p class="form-success" aria-live="polite" hidden>MESSAGE RECEIVED. THANK YOU!</p>
+          </form>
+        </div>
+      </section>
+    </div>
+    <audio id="global-bgm" autoplay loop preload="metadata">
+      <source src="music/pumpupthemind-creative-technology-showreel-241274.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="sound-player" aria-label="배경음악 플레이어">
+      <button class="sound-control" type="button" aria-pressed="true" aria-label="배경음악 끄기"><span>SOUND</span><strong data-sound-state>ON</strong><i class="sound-wave" aria-hidden="true"><b></b><b></b><b></b></i></button>
+      <button class="bgm-button" type="button" data-bgm-previous aria-label="이전 곡">‹</button>
+      <button class="bgm-button bgm-play" type="button" data-bgm-play aria-label="재생">▶</button>
+      <button class="bgm-button" type="button" data-bgm-stop aria-label="정지">■</button>
+      <button class="bgm-button" type="button" data-bgm-next aria-label="다음 곡">›</button>
+      <span class="bgm-title" data-bgm-title title="">AMBIENT SCI-FI ELECTRONIC DREAMER</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
