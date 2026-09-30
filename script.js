@@ -68,13 +68,13 @@ if (bgm && soundControl) {
   const BGM_VOLUME = 0.8;
   const FADE_DURATION = 700;
   const playlist = [
-    { title: 'CREATIVE TECHNOLOGY SHOWREEL', src: 'music/pumpupthemind-creative-technology-showreel-241274.mp3' },
-    { title: 'HAZY AFTER HOURS', src: 'music/mixkit-hazy-after-hours-132.mp3' },
-    { title: 'VASTNESS', src: 'music/mixkit-vastness-184.mp3' },
-    { title: 'WINE PON ME', src: 'music/mixkit-wine-pon-me-333.mp3' },
-    { title: 'DEEP FUTURE GARAGE', src: 'music/nveravetyanmusic-deep-future-garage-royalty-free-music-163081.mp3' },
-    { title: 'LAZY DAY — FUTURISTIC CHILL', src: 'music/penguinmusic-lazy-day-stylish-futuristic-chill-239287.mp3' },
-    { title: 'AMBIENT SCI-FI ELECTRONIC DREAMER', src: 'music/uniquecreativeaudio-ambient-sci-fi-electronic-dreamer-calm-synth-instrumental-294746.mp3' },
+    { title: 'CREATIVE TECHNOLOGY SHOWREEL', src: 'pumpupthemind-creative-technology-showreel-241274.mp3' },
+    { title: 'HAZY AFTER HOURS', src: 'mixkit-hazy-after-hours-132.mp3' },
+    { title: 'VASTNESS', src: 'mixkit-vastness-184.mp3' },
+    { title: 'WINE PON ME', src: 'mixkit-wine-pon-me-333.mp3' },
+    { title: 'DEEP FUTURE GARAGE', src: 'nveravetyanmusic-deep-future-garage-royalty-free-music-163081.mp3' },
+    { title: 'LAZY DAY — FUTURISTIC CHILL', src: 'penguinmusic-lazy-day-stylish-futuristic-chill-239287.mp3' },
+    { title: 'AMBIENT SCI-FI ELECTRONIC DREAMER', src: 'uniquecreativeaudio-ambient-sci-fi-electronic-dreamer-calm-synth-instrumental-294746.mp3' },
   ];
   const preferenceKey = 'suhyun-portfolio-sound-preference-v2';
   const trackKey = 'suhyun-portfolio-sound-track';
